@@ -1,0 +1,21 @@
+{
+  "name": "quilldraws",
+  "version": "1.0.0",
+  "description": "Quilldraws - Branding Agency Dubai",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "optimize:images": "node scripts/optimize-images.js"
+  },
+  "keywords": [],
+  "author": "Quilldraws",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "glob": "^13.0.6",
+    "sharp": "^0.34.5",
+    "vite": "^8.0.14"
+  }
+}

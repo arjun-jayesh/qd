@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Quilldraws Creatives</title>
+  <meta name="robots" content="noindex, nofollow">
+	
+	 <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18135583060">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18135583060');
+</script>
+	
+
+  <link rel="preload" href="/fonts/PlayfairDisplay-Variable.woff2" as="font" type="font/woff2" crossorigin>
+	<link href="/css/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* ── TOKENS ── */
+    :root {
+      --black:       #000000;
+      --dark:        #0c0c0c;
+      --surface:     #111111;
+      --border:      rgba(255,255,255,0.08);
+      --red:         #C61F49;
+      --white:       #ffffff;
+      --grey:        #a3a0a2;
+      --grey-light:  #cccccc;
+      --font-main:   'Poppins', sans-serif;
+      --font-sec:    'Playfair Display', serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-main);
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--grey);
+      background: var(--black);
+      letter-spacing: -0.15px;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    .drawsquill-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 90px;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0) 100%);
+    }
+
+    #header-container {
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #drawsquill-logo a { display: block; text-decoration: none; }
+    #drawsquill-logo img { height: 36px; width: auto; display: block; }
+
+    .drawsquill-nav-wrapper ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin: 0; padding: 0;
+    }
+
+    .drawsquill-nav-wrapper ul li { margin: 0; padding: 0; line-height: normal; }
+
+    .drawsquill-nav-wrapper ul li a {
+      font-family: var(--font-main);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      transition: color 0.25s;
+    }
+
+    .drawsquill-nav-wrapper ul li a:hover { color: var(--white); }
+
+    .header-button {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-main);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--white);
+      text-decoration: none;
+      transition: opacity 0.25s;
+    }
+
+    .header-button:hover { opacity: 0.65; }
+
+    .btn-icon {
+      width: 32px; height: 32px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      transition: border-color 0.25s, background 0.25s;
+    }
+
+    .header-button:hover .btn-icon {
+      border-color: var(--red);
+      background: var(--red);
+    }
+
+    /* ── SECONDARY FONT ── */
+    .secondary-font {
+      font-family: var(--font-sec);
+      font-weight: 400;
+      font-style: italic;
+      font-size: 105%;
+      color: var(--red);
+      letter-spacing: 0;
+    }
+
+    /* ── THANK YOU HERO ── */
+    .thankyou-hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 130px 50px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Subtle radial glow — same as landing hero */
+    .thankyou-hero::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px; height: 600px;
+      background: radial-gradient(ellipse at center, rgba(198,31,73,0.07) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .thankyou-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    /* Checkmark badge */
+    .ty-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      border: 1px solid rgba(198,31,73,0.35);
+      background: rgba(198,31,73,0.08);
+      margin-bottom: 36px;
+      color: var(--red);
+      font-size: 20px;
+    }
+
+    .ty-title {
+      font-family: var(--font-main);
+      font-size: clamp(30px, 5.5vw, 50px);
+      font-weight: 600;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      color: var(--white);
+      margin-bottom: 24px;
+    }
+
+    .ty-sub {
+      font-size: clamp(16px, 1.4vw, 19px);
+      font-weight: 300;
+      color: var(--grey);
+      line-height: 1.75;
+      max-width: 620px;
+      margin: 0 auto 48px;
+    }
+
+    /* Divider line */
+    .ty-divider {
+      width: 48px;
+      height: 1px;
+      background: rgba(198,31,73,0.5);
+      margin: 0 auto 48px;
+    }
+
+    /* Back link */
+    .ty-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-main);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      text-decoration: none;
+      transition: color 0.25s;
+    }
+
+    .ty-back:hover { color: var(--white); }
+    .ty-back i { font-size: 9px; }
+
+    /* ── FOOTER ── */
+    .drawsquill-footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 50px;
+    }
+
+    #footer-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .copyright {
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      color: rgba(255,255,255,0.25);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 32px;
+    }
+
+    .footer-links a {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      text-decoration: none;
+      transition: color 0.25s;
+    }
+
+    .footer-links a:hover { color: var(--white); }
+	  
+	  
+	  .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 28px;
+      background: var(--red);
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: opacity 0.25s, transform 0.25s;
+      white-space: nowrap;
+    }
+	  
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      #header-container { padding: 0 24px; }
+      .drawsquill-nav-wrapper { display: none; }
+      .thankyou-hero { padding: 110px 24px 60px; }
+      .ty-title { letter-spacing: -1.5px; }
+      .drawsquill-footer { padding: 24px; }
+      #footer-container { flex-direction: column; gap: 16px; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ══════════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════════ -->
+<header class="drawsquill-header">
+  <div id="header-container">
+
+    <div id="drawsquill-logo">
+      <a href="https://quilldraws.com">
+        <img src="images/landing/qd-logo.webp" alt="Quilldraws">
+      </a>
+    </div>
+
+    <nav class="drawsquill-nav-wrapper">
+      <ul>
+        <li><a href="https://quilldraws.com">Hello</a></li>
+        <li><a href="https://quilldraws.com/about.html">Agency</a></li>
+        <li><a href="https://quilldraws.com/services.html">Expertise</a></li>
+        <li><a href="https://quilldraws.com/work/index.html">Work</a></li>
+      </ul>
+    </nav>
+
+    <a class="header-button" href="https://quilldraws.com">
+      <div class="btn-icon"><i class="fa-solid fa-arrow-right"></i></div>
+      <span>Back to Site</span>
+    </a>
+
+  </div>
+</header>
+
+
+<!-- ══════════════════════════════════════════════
+     THANK YOU
+══════════════════════════════════════════════ -->
+<section class="thankyou-hero">
+  <div class="thankyou-inner">
+
+    <div class="ty-badge">
+      <i class="fa-solid fa-check"></i>
+    </div>
+
+    <h1 class="ty-title">
+      Thank you <span class="secondary-font">for your submission.</span>
+    </h1>
+
+    <p class="ty-sub">
+      We've received your details and our team will contact you shortly.
+    </p>
+
+
+
+
+
+      <div class="ty-divider" style="width:1px; height:32px; background:rgba(255,255,255,0.1); margin:0;"></div>
+
+		    <div class="ty-divider"></div>
+
+		
+      <p style="font-size:16px; color:rgba(255,255,255,0.35); letter-spacing:0.05em; padding: 12px">Explore our work collection here:</p>
+
+      
+	  
+	  <a href="https://quilldraws.com/work/index.html" class="btn-primary">
+        work &amp; portfolio
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+	  
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+<footer class="drawsquill-footer">
+  <div id="footer-container">
+    <div class="copyright">2026 © Quilldraws Creatives. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="https://quilldraws.com">Website</a>
+      <a href="https://quilldraws.com/about.html">Agency</a>
+      <a href="https://quilldraws.com/contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

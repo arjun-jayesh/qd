@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- MAIN PAGES -->
+  <url>
+    <loc>https://quilldraws.com/</loc>
+    <lastmod>2026-03-08T17:27:05+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://quilldraws.com/about</loc>
+    <lastmod>2026-03-08T17:27:02+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quilldraws.com/services</loc>
+    <lastmod>2026-03-08T17:27:05+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://quilldraws.com/work/</loc>
+    <lastmod>2026-03-08T17:27:05+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://quilldraws.com/contact</loc>
+    <lastmod>2026-03-08T17:27:02+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PORTFOLIO PROJECTS -->
+  <url>
+    <loc>https://quilldraws.com/work/toyota</loc>
+    <lastmod>2026-03-08T17:27:05+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quilldraws.com/work/hisense</loc>
+    <lastmod>2026-03-08T17:27:04+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quilldraws.com/work/gorenje</loc>
+    <lastmod>2026-03-08T17:27:02+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://quilldraws.com/work/yogashi</loc>
+    <lastmod>2026-03-08T17:27:05+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://quilldraws.com/work/chocobrosia</loc>
+    <lastmod>2026-03-08T17:27:02+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://quilldraws.com/work/aux</loc>
+    <lastmod>2026-03-08T17:27:02+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://quilldraws.com/work/uggo</loc>
+    <lastmod>2026-03-08T17:27:05+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://quilldraws.com/work/asg</loc>
+    <lastmod>2026-03-08T17:27:02+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- INSIGHTS MAIN PAGE -->
+  <url>
+    <loc>https://quilldraws.com/insights/</loc>
+    <lastmod>2026-03-13T17:27:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- INSIGHTS ARTICLES -->
+  <url>
+    <loc>https://quilldraws.com/insights/when-does-a-company-need-rebranding</loc>
+    <lastmod>2026-03-13T17:27:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quilldraws.com/insights/brand-identity-vs-logo-design</loc>
+    <lastmod>2026-03-13T17:27:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

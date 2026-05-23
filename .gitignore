@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+.DS_Store
+images-optimized/
+images/work/aux/
+work/aux.html
+images-optimized/work/aux/

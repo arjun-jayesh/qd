@@ -1,0 +1,87 @@
+# =========================
+# QUILL DRAWS - OPTIMIZED .htaccess
+# =========================
+
+RewriteEngine On
+
+# -------------------------
+# Force HTTPS + remove www
+# Redirect:
+# http://quilldraws.com
+# http://www.quilldraws.com
+# https://www.quilldraws.com
+# → https://quilldraws.com
+# -------------------------
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.quilldraws\.com$ [NC]
+RewriteRule ^ https://quilldraws.com%{REQUEST_URI} [L,R=301]
+
+# -------------------------
+# Redirect .html URLs → clean URLs
+# Examples:
+# /about.html → /about
+# /work/toyota.html → /work/toyota
+# -------------------------
+RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# -------------------------
+# Remove trailing slash from non-directories
+# Examples:
+# /about/ → /about
+# /work/ → /work
+# -------------------------
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} .+/$
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# -------------------------
+# Internally rewrite clean URLs → .html
+# Examples:
+# /about → about.html
+# /work/toyota → work/toyota.html
+# -------------------------
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# -------------------------
+# Custom 404
+# -------------------------
+ErrorDocument 404 /404.html
+
+# -------------------------
+# Hotlink protection
+# -------------------------
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https://quilldraws\.com/ [NC]
+RewriteRule \.(jpg|jpeg|png|gif|webp)$ - [F,NC,L]
+
+# -------------------------
+# Browser caching
+# -------------------------
+<IfModule mod_expires.c>
+ExpiresActive On
+
+# Images
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/webp "access plus 1 year"
+
+# CSS & JS
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+
+# Fonts
+ExpiresByType font/woff "access plus 1 year"
+ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# -------------------------
+# cPanel PHP handler (do not edit)
+# -------------------------
+# php -- BEGIN cPanel-generated handler
+# php -- END cPanel-generated handler
