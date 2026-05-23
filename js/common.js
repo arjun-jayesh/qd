@@ -3785,8 +3785,7 @@ Function Shortcodes
 			
 			if ($("body").hasClass("smooth-scroll")) {
 				var elem = document.querySelector("#content-scroll");
-				var scrollbar = //Scrollbar.init(elem,
-				{renderByPixels: true,damping:0.1});
+				// var scrollbar = Scrollbar.init(elem, {renderByPixels: true, damping: 0.1});
 			}
 			
 			const getMousePos = (e) => {

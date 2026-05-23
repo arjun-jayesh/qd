@@ -22,6 +22,10 @@ export default defineConfig({
   root: resolve(__dirname),
   base: '/qd/',
 
+  esbuild: {
+    drop: ['console', 'debugger'],
+  },
+
   build: {
     outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,
@@ -37,15 +41,7 @@ export default defineConfig({
     },
 
     // Minification
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-        passes: 2,
-      },
-      mangle: true,
-    },
+    minify: 'esbuild',
 
     // Asset inlining threshold (4KB)
     assetsInlineLimit: 4096,

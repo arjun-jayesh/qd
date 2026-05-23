@@ -924,7 +924,7 @@ html,body {
 	}
 	
 	.light-content .change-header i.arrow-icon::after, .dark-content .change-header i.arrow-icon::after {
-		background-colorcurrentColor;
+		background-color: currentColor;
 	}
 	
 	i.arrow-icon-down {
